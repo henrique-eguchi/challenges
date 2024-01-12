@@ -1,0 +1,1 @@
+- ProfileTab icon is cut - I will replace by system profile icon for now

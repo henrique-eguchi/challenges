@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */; };
-		1F639FDC2B51FF28002CDBB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FDB2B51FF28002CDBB9 /* ContentView.swift */; };
 		1F639FDE2B51FF2A002CDBB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */; };
 		1F639FE12B51FF2A002CDBB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FE02B51FF2A002CDBB9 /* Preview Assets.xcassets */; };
+		1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */; };
+		1F639FEC2B5205EB002CDBB9 /* DvorakIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FEB2B5205EB002CDBB9 /* DvorakIcons.swift */; };
+		1F639FEE2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FED2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F639FD62B51FF28002CDBB9 /* dvorak-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dvorak-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dvorak_challengeApp.swift; sourceTree = "<group>"; };
-		1F639FDB2B51FF28002CDBB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F639FE02B51FF2A002CDBB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		1F639FEB2B5205EB002CDBB9 /* DvorakIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvorakIcons.swift; sourceTree = "<group>"; };
+		1F639FED2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvorakIcons+SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		1F639FD82B51FF28002CDBB9 /* dvorak-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				1F639FEF2B52064F002CDBB9 /* DS */,
+				1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */,
 				1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */,
-				1F639FDB2B51FF28002CDBB9 /* ContentView.swift */,
 				1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */,
 				1F639FDF2B51FF2A002CDBB9 /* Preview Content */,
 			);
@@ -65,6 +70,15 @@
 				1F639FE02B51FF2A002CDBB9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F639FEF2B52064F002CDBB9 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				1F639FEB2B5205EB002CDBB9 /* DvorakIcons.swift */,
+				1F639FED2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift */,
+			);
+			path = DS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F639FDC2B51FF28002CDBB9 /* ContentView.swift in Sources */,
+				1F639FEC2B5205EB002CDBB9 /* DvorakIcons.swift in Sources */,
+				1F639FEE2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
+				1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
