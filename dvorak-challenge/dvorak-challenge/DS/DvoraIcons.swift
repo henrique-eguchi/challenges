@@ -8,8 +8,12 @@
 import Foundation
 
 public enum DvoraIcons: String {
-    case home = "HomeTab"
-    case chat = "ChatTab"
-    case calendar = "CalendarTab"
-    case profile = "ProfileTab"
+    case homeTab = "HomeTab"
+    case chatTab = "ChatTab"
+    case calendarTab = "CalendarTab"
+    case profileTab = "ProfileTab"
+    case calendar = "CalendarIcon"
+    case clock = "ClockIcon"
+    case pin = "PinIcon"
+    case price = "PriceIcon"
 }

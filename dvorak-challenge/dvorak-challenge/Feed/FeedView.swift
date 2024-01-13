@@ -14,7 +14,7 @@ struct FeedView: View {
                 Divider()
                 ScrollView(.vertical, showsIndicators: false) {
                     WelcomeView()
-                    // TODO: - Events
+                    EventsView()
                     BundlesView()
                     PromotionsView()
                     CoLabView()

@@ -39,6 +39,11 @@
 		1F63A02C2B5230F1002CDBB9 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A02B2B5230F1002CDBB9 /* ServicesView.swift */; };
 		1F63A02F2B523120002CDBB9 /* ServiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A02E2B523120002CDBB9 /* ServiceItemView.swift */; };
 		1F63A0312B52317E002CDBB9 /* ServiceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0302B52317E002CDBB9 /* ServiceDetailsView.swift */; };
+		1F63A0332B530254002CDBB9 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0322B530254002CDBB9 /* EventsView.swift */; };
+		1F63A0352B530270002CDBB9 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0342B530270002CDBB9 /* EventsViewModel.swift */; };
+		1F63A0372B530288002CDBB9 /* EventItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0362B530288002CDBB9 /* EventItemModel.swift */; };
+		1F63A03A2B5302E8002CDBB9 /* EventItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0392B5302E8002CDBB9 /* EventItemView.swift */; };
+		1F63A03C2B530311002CDBB9 /* IconDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +80,11 @@
 		1F63A02B2B5230F1002CDBB9 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		1F63A02E2B523120002CDBB9 /* ServiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItemView.swift; sourceTree = "<group>"; };
 		1F63A0302B52317E002CDBB9 /* ServiceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsView.swift; sourceTree = "<group>"; };
+		1F63A0322B530254002CDBB9 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		1F63A0342B530270002CDBB9 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		1F63A0362B530288002CDBB9 /* EventItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemModel.swift; sourceTree = "<group>"; };
+		1F63A0392B5302E8002CDBB9 /* EventItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemView.swift; sourceTree = "<group>"; };
+		1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +171,10 @@
 		1F639FFE2B521748002CDBB9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A0382B5302DA002CDBB9 /* Items */,
+				1F63A0322B530254002CDBB9 /* EventsView.swift */,
+				1F63A0342B530270002CDBB9 /* EventsViewModel.swift */,
+				1F63A0362B530288002CDBB9 /* EventItemModel.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -221,6 +235,7 @@
 				1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */,
 				1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */,
 				1F63A0202B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift */,
+				1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -251,6 +266,14 @@
 			isa = PBXGroup;
 			children = (
 				1F63A02E2B523120002CDBB9 /* ServiceItemView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		1F63A0382B5302DA002CDBB9 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A0392B5302E8002CDBB9 /* EventItemView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -332,15 +355,18 @@
 				1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */,
 				1F63A01B2B522458002CDBB9 /* BundlesViewModel.swift in Sources */,
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
+				1F63A0352B530270002CDBB9 /* EventsViewModel.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */,
 				1F63A0252B523095002CDBB9 /* ServiceModel.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
 				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
+				1F63A0332B530254002CDBB9 /* EventsView.swift in Sources */,
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */,
 				1F63A0212B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift in Sources */,
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
+				1F63A0372B530288002CDBB9 /* EventItemModel.swift in Sources */,
 				1F63A02F2B523120002CDBB9 /* ServiceItemView.swift in Sources */,
 				1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
@@ -349,7 +375,9 @@
 				1F63A0282B5230B3002CDBB9 /* ServiceDetailsModel.swift in Sources */,
 				1F63A0312B52317E002CDBB9 /* ServiceDetailsView.swift in Sources */,
 				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
+				1F63A03C2B530311002CDBB9 /* IconDescriptionView.swift in Sources */,
 				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
+				1F63A03A2B5302E8002CDBB9 /* EventItemView.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
 				1F63A02C2B5230F1002CDBB9 /* ServicesView.swift in Sources */,
 				1F63A00E2B521A51002CDBB9 /* VerticalBar.swift in Sources */,
