@@ -18,6 +18,7 @@
 		1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FF62B52115F002CDBB9 /* DvoraImages+SwiftUI.swift */; };
 		1F639FF92B5214BB002CDBB9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FF82B5214BB002CDBB9 /* Colors.xcassets */; };
 		1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */; };
+		1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0032B521798002CDBB9 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1F639FF62B52115F002CDBB9 /* DvoraImages+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraImages+SwiftUI.swift"; sourceTree = "<group>"; };
 		1F639FF82B5214BB002CDBB9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraColors+SwiftUI.swift"; sourceTree = "<group>"; };
+		1F63A0032B521798002CDBB9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,7 @@
 			children = (
 				1F639FEF2B52064F002CDBB9 /* DS */,
 				1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */,
-				1F639FF22B520F6F002CDBB9 /* FeedView.swift */,
+				1F639FFC2B521729002CDBB9 /* Feed */,
 				1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */,
 				1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */,
 				1F639FF82B5214BB002CDBB9 /* Colors.xcassets */,
@@ -94,6 +96,63 @@
 				1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */,
 			);
 			path = DS;
+			sourceTree = "<group>";
+		};
+		1F639FFC2B521729002CDBB9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1F639FFD2B521742002CDBB9 /* Welcome */,
+				1F639FFE2B521748002CDBB9 /* Events */,
+				1F639FFF2B52174C002CDBB9 /* Bundles */,
+				1F63A0002B521752002CDBB9 /* Promotions */,
+				1F63A0012B521757002CDBB9 /* CoLabView */,
+				1F63A0022B52175D002CDBB9 /* Services */,
+				1F639FF22B520F6F002CDBB9 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1F639FFD2B521742002CDBB9 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A0032B521798002CDBB9 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		1F639FFE2B521748002CDBB9 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		1F639FFF2B52174C002CDBB9 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bundles;
+			sourceTree = "<group>";
+		};
+		1F63A0002B521752002CDBB9 /* Promotions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Promotions;
+			sourceTree = "<group>";
+		};
+		1F63A0012B521757002CDBB9 /* CoLabView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoLabView;
+			sourceTree = "<group>";
+		};
+		1F63A0022B52175D002CDBB9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +230,7 @@
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
+				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,

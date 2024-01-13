@@ -12,6 +12,9 @@ struct FeedView: View {
         NavigationView {
             VStack {
                 Divider()
+                ScrollView(.vertical, showsIndicators: false) {
+                    WelcomeView()
+                }
             }
             .navigationTitle("DVORA")
             .navigationBarTitleDisplayMode(.inline)
