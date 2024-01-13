@@ -10,7 +10,14 @@ import SwiftUI
 struct PromotionsView: View {
     var body: some View {
         FeedItemStyleView(title: "Promotions", showSeeAll: false) {
-            Text("Promotions")
+            WideHorizontalBannerView(
+                title: "20% of on any Cleaning",
+                gradientColors: [
+                    DvoraColors.green,
+                    DvoraColors.green.opacity(0.8)
+                ],
+                imageName: "star"
+            )
             .onTapGesture {
                 print("Promotion tapped!")
             }
