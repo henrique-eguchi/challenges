@@ -20,6 +20,10 @@
 		1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */; };
 		1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0032B521798002CDBB9 /* WelcomeView.swift */; };
 		1F63A0062B521837002CDBB9 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0052B521837002CDBB9 /* WelcomeViewModel.swift */; };
+		1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0072B5219C3002CDBB9 /* BundlesView.swift */; };
+		1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A00A2B5219FC002CDBB9 /* FeedItemStyleView.swift */; };
+		1F63A00E2B521A51002CDBB9 /* VerticalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A00D2B521A51002CDBB9 /* VerticalBar.swift */; };
+		1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraColors+SwiftUI.swift"; sourceTree = "<group>"; };
 		1F63A0032B521798002CDBB9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		1F63A0052B521837002CDBB9 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		1F63A0072B5219C3002CDBB9 /* BundlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlesView.swift; sourceTree = "<group>"; };
+		1F63A00A2B5219FC002CDBB9 /* FeedItemStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemStyleView.swift; sourceTree = "<group>"; };
+		1F63A00D2B521A51002CDBB9 /* VerticalBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBar.swift; sourceTree = "<group>"; };
+		1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 		1F639FEF2B52064F002CDBB9 /* DS */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A00C2B521A32002CDBB9 /* UI */,
 				1F639FEB2B5205EB002CDBB9 /* DvoraIcons.swift */,
 				1F639FED2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift */,
 				1F639FF42B521149002CDBB9 /* DvoraImages.swift */,
@@ -103,6 +112,7 @@
 		1F639FFC2B521729002CDBB9 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A0092B5219DE002CDBB9 /* Common */,
 				1F639FFD2B521742002CDBB9 /* Welcome */,
 				1F639FFE2B521748002CDBB9 /* Events */,
 				1F639FFF2B52174C002CDBB9 /* Bundles */,
@@ -133,6 +143,7 @@
 		1F639FFF2B52174C002CDBB9 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A0072B5219C3002CDBB9 /* BundlesView.swift */,
 			);
 			path = Bundles;
 			sourceTree = "<group>";
@@ -156,6 +167,23 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		1F63A0092B5219DE002CDBB9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A00A2B5219FC002CDBB9 /* FeedItemStyleView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F63A00C2B521A32002CDBB9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A00D2B521A51002CDBB9 /* VerticalBar.swift */,
+				1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +262,14 @@
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
+				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
+				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
+				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
+				1F63A00E2B521A51002CDBB9 /* VerticalBar.swift in Sources */,
 				1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
