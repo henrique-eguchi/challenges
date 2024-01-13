@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    let name = "Henrique"
+    var viewModel = WelcomeViewModel()
 
     var body: some View {
         HStack {
-            Text("Welcome, \(name)!")
+            Text(viewModel.greetings)
                 .font(.title)
             Spacer()
         }

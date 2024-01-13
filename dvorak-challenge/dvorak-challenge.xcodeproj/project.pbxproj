@@ -19,6 +19,7 @@
 		1F639FF92B5214BB002CDBB9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FF82B5214BB002CDBB9 /* Colors.xcassets */; };
 		1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */; };
 		1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0032B521798002CDBB9 /* WelcomeView.swift */; };
+		1F63A0062B521837002CDBB9 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0052B521837002CDBB9 /* WelcomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1F639FF82B5214BB002CDBB9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraColors+SwiftUI.swift"; sourceTree = "<group>"; };
 		1F63A0032B521798002CDBB9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1F63A0052B521837002CDBB9 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				1F63A0032B521798002CDBB9 /* WelcomeView.swift */,
+				1F63A0052B521837002CDBB9 /* WelcomeViewModel.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F639FF52B521149002CDBB9 /* DvoraImages.swift in Sources */,
+				1F63A0062B521837002CDBB9 /* WelcomeViewModel.swift in Sources */,
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
