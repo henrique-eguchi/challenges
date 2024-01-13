@@ -1,3 +1,6 @@
+Logbook
+
 - Started 01-12 08:30pm
-- ProfileTab icon is cut - I will replace by system profile icon for now
-- Pause
+    - ProfileTab icon is cut - I will replace by system profile icon for now
+- Paused 01-12 08:50pm
+- Resumed 01-12 09:25pm
