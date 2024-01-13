@@ -30,6 +30,9 @@
 		1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */; };
 		1F63A01B2B522458002CDBB9 /* BundlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A01A2B522458002CDBB9 /* BundlesViewModel.swift */; };
 		1F63A01D2B522466002CDBB9 /* PromotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A01C2B522466002CDBB9 /* PromotionsViewModel.swift */; };
+		1F63A01F2B5225D6002CDBB9 /* CoLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A01E2B5225D6002CDBB9 /* CoLabView.swift */; };
+		1F63A0212B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0202B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift */; };
+		1F63A0232B522707002CDBB9 /* CoLabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0222B522707002CDBB9 /* CoLabViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideHorizontalBannerView.swift; sourceTree = "<group>"; };
 		1F63A01A2B522458002CDBB9 /* BundlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlesViewModel.swift; sourceTree = "<group>"; };
 		1F63A01C2B522466002CDBB9 /* PromotionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsViewModel.swift; sourceTree = "<group>"; };
+		1F63A01E2B5225D6002CDBB9 /* CoLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoLabView.swift; sourceTree = "<group>"; };
+		1F63A0202B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideImageDescriptionView.swift; sourceTree = "<group>"; };
+		1F63A0222B522707002CDBB9 /* CoLabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoLabViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,8 @@
 		1F63A0012B521757002CDBB9 /* CoLabView */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A01E2B5225D6002CDBB9 /* CoLabView.swift */,
+				1F63A0222B522707002CDBB9 /* CoLabViewModel.swift */,
 			);
 			path = CoLabView;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */,
 				1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */,
 				1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */,
+				1F63A0202B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -294,14 +303,17 @@
 				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */,
+				1F63A0212B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift in Sources */,
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
 				1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
+				1F63A01F2B5225D6002CDBB9 /* CoLabView.swift in Sources */,
 				1F63A01D2B522466002CDBB9 /* PromotionsViewModel.swift in Sources */,
 				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
 				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
 				1F63A00E2B521A51002CDBB9 /* VerticalBar.swift in Sources */,
+				1F63A0232B522707002CDBB9 /* CoLabViewModel.swift in Sources */,
 				1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

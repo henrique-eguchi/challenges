@@ -9,4 +9,5 @@ import Foundation
 
 public enum DvoraImages: String {
     case logo = "DVORALogo"
+    case colab = "ColabGraphic"
 }
