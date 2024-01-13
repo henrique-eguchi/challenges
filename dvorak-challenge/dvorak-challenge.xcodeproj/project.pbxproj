@@ -24,6 +24,8 @@
 		1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A00A2B5219FC002CDBB9 /* FeedItemStyleView.swift */; };
 		1F63A00E2B521A51002CDBB9 /* VerticalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A00D2B521A51002CDBB9 /* VerticalBar.swift */; };
 		1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */; };
+		1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */; };
+		1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		1F63A00A2B5219FC002CDBB9 /* FeedItemStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemStyleView.swift; sourceTree = "<group>"; };
 		1F63A00D2B521A51002CDBB9 /* VerticalBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBar.swift; sourceTree = "<group>"; };
 		1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHeaderView.swift; sourceTree = "<group>"; };
+		1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideVerticalBannerView.swift; sourceTree = "<group>"; };
+		1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideGradientRectangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 			children = (
 				1F63A00D2B521A51002CDBB9 /* VerticalBar.swift */,
 				1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */,
+				1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */,
+				1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			files = (
 				1F639FF52B521149002CDBB9 /* DvoraImages.swift in Sources */,
 				1F63A0062B521837002CDBB9 /* WelcomeViewModel.swift in Sources */,
+				1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */,
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
+				1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
 				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,

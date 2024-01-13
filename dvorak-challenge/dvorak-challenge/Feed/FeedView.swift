@@ -14,6 +14,11 @@ struct FeedView: View {
                 Divider()
                 ScrollView(.vertical, showsIndicators: false) {
                     WelcomeView()
+                    // MARK: - Events
+                    BundlesView()
+                    // MARK: - Promotions
+                    // MARK: - CoLab
+                    // MARK: - Services
                 }
             }
             .navigationTitle("DVORA")
