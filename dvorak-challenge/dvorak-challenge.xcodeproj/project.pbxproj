@@ -44,6 +44,8 @@
 		1F63A0372B530288002CDBB9 /* EventItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0362B530288002CDBB9 /* EventItemModel.swift */; };
 		1F63A03A2B5302E8002CDBB9 /* EventItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0392B5302E8002CDBB9 /* EventItemView.swift */; };
 		1F63A03C2B530311002CDBB9 /* IconDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */; };
+		1F63A03F2B530A18002CDBB9 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A03E2B530A18002CDBB9 /* EventDetailsView.swift */; };
+		1F63A0412B530A2F002CDBB9 /* EventInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0402B530A2F002CDBB9 /* EventInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		1F63A0362B530288002CDBB9 /* EventItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemModel.swift; sourceTree = "<group>"; };
 		1F63A0392B5302E8002CDBB9 /* EventItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemView.swift; sourceTree = "<group>"; };
 		1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDescriptionView.swift; sourceTree = "<group>"; };
+		1F63A03E2B530A18002CDBB9 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		1F63A0402B530A2F002CDBB9 /* EventInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 		1F639FFE2B521748002CDBB9 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A03D2B530A01002CDBB9 /* EventDetails */,
 				1F63A0382B5302DA002CDBB9 /* Items */,
 				1F63A0322B530254002CDBB9 /* EventsView.swift */,
 				1F63A0342B530270002CDBB9 /* EventsViewModel.swift */,
@@ -209,8 +214,8 @@
 		1F63A0022B52175D002CDBB9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A0262B52309D002CDBB9 /* ServiceDetails */,
 				1F63A02D2B523117002CDBB9 /* Items */,
-				1F63A0262B52309D002CDBB9 /* Details */,
 				1F63A0242B523095002CDBB9 /* ServiceModel.swift */,
 				1F63A0292B5230C7002CDBB9 /* ServicesViewModel.swift */,
 				1F63A02B2B5230F1002CDBB9 /* ServicesView.swift */,
@@ -253,13 +258,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		1F63A0262B52309D002CDBB9 /* Details */ = {
+		1F63A0262B52309D002CDBB9 /* ServiceDetails */ = {
 			isa = PBXGroup;
 			children = (
 				1F63A0272B5230B3002CDBB9 /* ServiceDetailsModel.swift */,
 				1F63A0302B52317E002CDBB9 /* ServiceDetailsView.swift */,
 			);
-			path = Details;
+			path = ServiceDetails;
 			sourceTree = "<group>";
 		};
 		1F63A02D2B523117002CDBB9 /* Items */ = {
@@ -276,6 +281,15 @@
 				1F63A0392B5302E8002CDBB9 /* EventItemView.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		1F63A03D2B530A01002CDBB9 /* EventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A03E2B530A18002CDBB9 /* EventDetailsView.swift */,
+				1F63A0402B530A2F002CDBB9 /* EventInformationView.swift */,
+			);
+			path = EventDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +376,7 @@
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
 				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
 				1F63A0332B530254002CDBB9 /* EventsView.swift in Sources */,
+				1F63A03F2B530A18002CDBB9 /* EventDetailsView.swift in Sources */,
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */,
 				1F63A0212B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift in Sources */,
@@ -376,6 +391,7 @@
 				1F63A0312B52317E002CDBB9 /* ServiceDetailsView.swift in Sources */,
 				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
 				1F63A03C2B530311002CDBB9 /* IconDescriptionView.swift in Sources */,
+				1F63A0412B530A2F002CDBB9 /* EventInformationView.swift in Sources */,
 				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
 				1F63A03A2B5302E8002CDBB9 /* EventItemView.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
