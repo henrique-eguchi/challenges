@@ -5,10 +5,30 @@
 //  Created by Henrique Akiyoshi Eguchi on 13/01/24.
 //
 
+import Combine
 import Foundation
 
 final class EventsViewModel: ObservableObject {
-    @Published var items: [EventItemModel] = [
+    @Published var items: [EventItemModel] = []
+    @Published var isFetchingData = false
+    private var cancellables: Set<AnyCancellable> = []
+
+    init() {
+        fetchData()
+    }
+
+    func fetchData() {
+        isFetchingData = true
+        Just(mockedEvents)
+            .delay(for: 0.5, scheduler: DispatchQueue.main)
+            .sink { [weak self] events in
+                self?.items = events
+                self?.isFetchingData = false
+            }
+            .store(in: &cancellables)
+    }
+
+    private let mockedEvents: [EventItemModel] = [
         EventItemModel(
             thumbnail: "Event1",
             description: "Wine Tasting",
