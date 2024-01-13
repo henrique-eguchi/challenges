@@ -18,4 +18,5 @@ FYI
 - Some provided icons is cut so I replaced by system icons for now;
 - Some mock images was provided in low res - It would be better changing them to a high res later;
 - DVORA logo is a png but has a white background color, it would be better having a transparent background so we can use it in other places with different background colors;
-- Missing some images from .pdf like the stars from the Promotions component.
+- Missing some images from .pdf like the stars from the Promotions component;
+- Link between EventsView and EventDetailsView built with NavigationLink - it might change if we follow a Coordinator structure for instance;
