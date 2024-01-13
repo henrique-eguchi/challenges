@@ -46,6 +46,7 @@
 		1F63A03C2B530311002CDBB9 /* IconDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */; };
 		1F63A03F2B530A18002CDBB9 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A03E2B530A18002CDBB9 /* EventDetailsView.swift */; };
 		1F63A0412B530A2F002CDBB9 /* EventInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0402B530A2F002CDBB9 /* EventInformationView.swift */; };
+		1F63A0432B530BE8002CDBB9 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0422B530BE8002CDBB9 /* EventDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		1F63A03B2B530311002CDBB9 /* IconDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconDescriptionView.swift; sourceTree = "<group>"; };
 		1F63A03E2B530A18002CDBB9 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		1F63A0402B530A2F002CDBB9 /* EventInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInformationView.swift; sourceTree = "<group>"; };
+		1F63A0422B530BE8002CDBB9 /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				1F639FEF2B52064F002CDBB9 /* DS */,
+				1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */,
 				1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */,
 				1F639FFC2B521729002CDBB9 /* Feed */,
-				1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */,
-				1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */,
-				1F639FF82B5214BB002CDBB9 /* Colors.xcassets */,
 				1F639FDF2B51FF2A002CDBB9 /* Preview Content */,
 			);
 			path = "dvorak-challenge";
@@ -143,6 +143,8 @@
 		1F639FEF2B52064F002CDBB9 /* DS */ = {
 			isa = PBXGroup;
 			children = (
+				1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */,
+				1F639FF82B5214BB002CDBB9 /* Colors.xcassets */,
 				1F63A00C2B521A32002CDBB9 /* UI */,
 				1F639FEB2B5205EB002CDBB9 /* DvoraIcons.swift */,
 				1F639FED2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift */,
@@ -158,7 +160,6 @@
 			children = (
 				1F63A0092B5219DE002CDBB9 /* Common */,
 				1F63A0152B521F6F002CDBB9 /* Components */,
-				1F639FF22B520F6F002CDBB9 /* FeedView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -248,6 +249,7 @@
 		1F63A0152B521F6F002CDBB9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1F639FF22B520F6F002CDBB9 /* FeedView.swift */,
 				1F639FFD2B521742002CDBB9 /* Welcome */,
 				1F639FFE2B521748002CDBB9 /* Events */,
 				1F639FFF2B52174C002CDBB9 /* Bundles */,
@@ -288,6 +290,7 @@
 			children = (
 				1F63A03E2B530A18002CDBB9 /* EventDetailsView.swift */,
 				1F63A0402B530A2F002CDBB9 /* EventInformationView.swift */,
+				1F63A0422B530BE8002CDBB9 /* EventDetailsViewModel.swift */,
 			);
 			path = EventDetails;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */,
 				1F63A0252B523095002CDBB9 /* ServiceModel.swift in Sources */,
+				1F63A0432B530BE8002CDBB9 /* EventDetailsViewModel.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
 				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
 				1F63A0332B530254002CDBB9 /* EventsView.swift in Sources */,
