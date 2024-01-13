@@ -11,9 +11,13 @@
 		1F639FDE2B51FF2A002CDBB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */; };
 		1F639FE12B51FF2A002CDBB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FE02B51FF2A002CDBB9 /* Preview Assets.xcassets */; };
 		1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */; };
-		1F639FEC2B5205EB002CDBB9 /* DvorakIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FEB2B5205EB002CDBB9 /* DvorakIcons.swift */; };
-		1F639FEE2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FED2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift */; };
+		1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FEB2B5205EB002CDBB9 /* DvoraIcons.swift */; };
+		1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FED2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift */; };
 		1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FF22B520F6F002CDBB9 /* FeedView.swift */; };
+		1F639FF52B521149002CDBB9 /* DvoraImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FF42B521149002CDBB9 /* DvoraImages.swift */; };
+		1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FF62B52115F002CDBB9 /* DvoraImages+SwiftUI.swift */; };
+		1F639FF92B5214BB002CDBB9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F639FF82B5214BB002CDBB9 /* Colors.xcassets */; };
+		1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +26,13 @@
 		1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F639FE02B51FF2A002CDBB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F639FE92B5201EA002CDBB9 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
-		1F639FEB2B5205EB002CDBB9 /* DvorakIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvorakIcons.swift; sourceTree = "<group>"; };
-		1F639FED2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvorakIcons+SwiftUI.swift"; sourceTree = "<group>"; };
+		1F639FEB2B5205EB002CDBB9 /* DvoraIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvoraIcons.swift; sourceTree = "<group>"; };
+		1F639FED2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraIcons+SwiftUI.swift"; sourceTree = "<group>"; };
 		1F639FF22B520F6F002CDBB9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		1F639FF42B521149002CDBB9 /* DvoraImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvoraImages.swift; sourceTree = "<group>"; };
+		1F639FF62B52115F002CDBB9 /* DvoraImages+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraImages+SwiftUI.swift"; sourceTree = "<group>"; };
+		1F639FF82B5214BB002CDBB9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DvoraColors+SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 				1F639FF22B520F6F002CDBB9 /* FeedView.swift */,
 				1F639FD92B51FF28002CDBB9 /* dvorak_challengeApp.swift */,
 				1F639FDD2B51FF2A002CDBB9 /* Assets.xcassets */,
+				1F639FF82B5214BB002CDBB9 /* Colors.xcassets */,
 				1F639FDF2B51FF2A002CDBB9 /* Preview Content */,
 			);
 			path = "dvorak-challenge";
@@ -78,8 +87,11 @@
 		1F639FEF2B52064F002CDBB9 /* DS */ = {
 			isa = PBXGroup;
 			children = (
-				1F639FEB2B5205EB002CDBB9 /* DvorakIcons.swift */,
-				1F639FED2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift */,
+				1F639FEB2B5205EB002CDBB9 /* DvoraIcons.swift */,
+				1F639FED2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift */,
+				1F639FF42B521149002CDBB9 /* DvoraImages.swift */,
+				1F639FF62B52115F002CDBB9 /* DvoraImages+SwiftUI.swift */,
+				1F639FFA2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift */,
 			);
 			path = DS;
 			sourceTree = "<group>";
@@ -142,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F639FF92B5214BB002CDBB9 /* Colors.xcassets in Resources */,
 				1F639FE12B51FF2A002CDBB9 /* Preview Assets.xcassets in Resources */,
 				1F639FDE2B51FF2A002CDBB9 /* Assets.xcassets in Resources */,
 			);
@@ -154,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F639FF52B521149002CDBB9 /* DvoraImages.swift in Sources */,
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
-				1F639FEC2B5205EB002CDBB9 /* DvorakIcons.swift in Sources */,
-				1F639FEE2B520621002CDBB9 /* DvorakIcons+SwiftUI.swift in Sources */,
+				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
+				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
+				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
+				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
 				1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */,
 			);
@@ -217,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -274,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

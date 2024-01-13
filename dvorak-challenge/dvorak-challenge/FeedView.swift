@@ -9,7 +9,30 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Divider()
+            }
+            .navigationTitle("DVORA")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    DvoraImages.logo.image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        print("Notification tapped!")
+                    }, label: {
+                        Image(systemName: "bell")
+                            .tint(DvoraColors.green)
+                    })
+
+                }
+            }
+        }
     }
 }
 

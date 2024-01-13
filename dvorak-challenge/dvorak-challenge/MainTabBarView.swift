@@ -12,15 +12,15 @@ struct MainTabBarView: View {
         TabView {
             FeedView()
                 .tabItem {
-                    DvorakIcons.home.image
+                    DvoraIcons.home.image
                 }
             Text("Chat")
                 .tabItem {
-                    DvorakIcons.chat.image
+                    DvoraIcons.chat.image
                 }
             Text("Calendar")
                 .tabItem {
-                    DvorakIcons.calendar.image
+                    DvoraIcons.calendar.image
                 }
             Text("Profile")
                 .tabItem {
