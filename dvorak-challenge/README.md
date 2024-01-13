@@ -7,3 +7,5 @@ Logbook
     - BellIcon is also cut - replaced by system bell icon
 - Paused 01-12 10:55pm
 - Resumed 01-12 11:00pm
+- Paused 01-12 11:55pm
+    - Remaining taks - Events & Events Details + Combine usage (mock) + overall tweaks
