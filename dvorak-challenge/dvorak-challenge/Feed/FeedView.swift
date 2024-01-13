@@ -18,7 +18,7 @@ struct FeedView: View {
                     BundlesView()
                     PromotionsView()
                     CoLabView()
-                    // TODO: - Services
+                    ServicesView()
                 }
             }
             .navigationTitle("DVORA")

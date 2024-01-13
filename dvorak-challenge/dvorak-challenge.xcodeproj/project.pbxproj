@@ -33,6 +33,12 @@
 		1F63A01F2B5225D6002CDBB9 /* CoLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A01E2B5225D6002CDBB9 /* CoLabView.swift */; };
 		1F63A0212B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0202B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift */; };
 		1F63A0232B522707002CDBB9 /* CoLabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0222B522707002CDBB9 /* CoLabViewModel.swift */; };
+		1F63A0252B523095002CDBB9 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0242B523095002CDBB9 /* ServiceModel.swift */; };
+		1F63A0282B5230B3002CDBB9 /* ServiceDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0272B5230B3002CDBB9 /* ServiceDetailsModel.swift */; };
+		1F63A02A2B5230C7002CDBB9 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0292B5230C7002CDBB9 /* ServicesViewModel.swift */; };
+		1F63A02C2B5230F1002CDBB9 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A02B2B5230F1002CDBB9 /* ServicesView.swift */; };
+		1F63A02F2B523120002CDBB9 /* ServiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A02E2B523120002CDBB9 /* ServiceItemView.swift */; };
+		1F63A0312B52317E002CDBB9 /* ServiceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0302B52317E002CDBB9 /* ServiceDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +69,12 @@
 		1F63A01E2B5225D6002CDBB9 /* CoLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoLabView.swift; sourceTree = "<group>"; };
 		1F63A0202B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideImageDescriptionView.swift; sourceTree = "<group>"; };
 		1F63A0222B522707002CDBB9 /* CoLabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoLabViewModel.swift; sourceTree = "<group>"; };
+		1F63A0242B523095002CDBB9 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		1F63A0272B5230B3002CDBB9 /* ServiceDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsModel.swift; sourceTree = "<group>"; };
+		1F63A0292B5230C7002CDBB9 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
+		1F63A02B2B5230F1002CDBB9 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		1F63A02E2B523120002CDBB9 /* ServiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItemView.swift; sourceTree = "<group>"; };
+		1F63A0302B52317E002CDBB9 /* ServiceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +195,11 @@
 		1F63A0022B52175D002CDBB9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1F63A02D2B523117002CDBB9 /* Items */,
+				1F63A0262B52309D002CDBB9 /* Details */,
+				1F63A0242B523095002CDBB9 /* ServiceModel.swift */,
+				1F63A0292B5230C7002CDBB9 /* ServicesViewModel.swift */,
+				1F63A02B2B5230F1002CDBB9 /* ServicesView.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +236,23 @@
 				1F63A0022B52175D002CDBB9 /* Services */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1F63A0262B52309D002CDBB9 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A0272B5230B3002CDBB9 /* ServiceDetailsModel.swift */,
+				1F63A0302B52317E002CDBB9 /* ServiceDetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1F63A02D2B523117002CDBB9 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				1F63A02E2B523120002CDBB9 /* ServiceItemView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F63A02A2B5230C7002CDBB9 /* ServicesViewModel.swift in Sources */,
 				1F639FF52B521149002CDBB9 /* DvoraImages.swift in Sources */,
 				1F63A0062B521837002CDBB9 /* WelcomeViewModel.swift in Sources */,
 				1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */,
@@ -299,19 +334,24 @@
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */,
+				1F63A0252B523095002CDBB9 /* ServiceModel.swift in Sources */,
 				1F639FEC2B5205EB002CDBB9 /* DvoraIcons.swift in Sources */,
 				1F63A00B2B5219FD002CDBB9 /* FeedItemStyleView.swift in Sources */,
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */,
 				1F63A0212B5226C8002CDBB9 /* LeftSideImageDescriptionView.swift in Sources */,
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
+				1F63A02F2B523120002CDBB9 /* ServiceItemView.swift in Sources */,
 				1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
 				1F63A01F2B5225D6002CDBB9 /* CoLabView.swift in Sources */,
 				1F63A01D2B522466002CDBB9 /* PromotionsViewModel.swift in Sources */,
+				1F63A0282B5230B3002CDBB9 /* ServiceDetailsModel.swift in Sources */,
+				1F63A0312B52317E002CDBB9 /* ServiceDetailsView.swift in Sources */,
 				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
 				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,
+				1F63A02C2B5230F1002CDBB9 /* ServicesView.swift in Sources */,
 				1F63A00E2B521A51002CDBB9 /* VerticalBar.swift in Sources */,
 				1F63A0232B522707002CDBB9 /* CoLabViewModel.swift in Sources */,
 				1F639FEA2B5201EA002CDBB9 /* MainTabBarView.swift in Sources */,
