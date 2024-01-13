@@ -11,7 +11,10 @@ struct EventsView: View {
     @ObservedObject var viewModel: EventsViewModel = EventsViewModel()
 
     var body: some View {
-        FeedItemStyleView(title: "Events", showSeeAll: true) {
+        FeedItemStyleView(
+            title: viewModel.title,
+            showSeeAll: true
+        ) {
             if viewModel.isFetchingData {
                 ProgressView()
                     .padding()

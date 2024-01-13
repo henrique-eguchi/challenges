@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FeedItemStyleView<Content: View>: View {
     var title: String
+    // TODO: - Just a flag - in a real-world scenario we would have a closure for the 'button' event as well
     var showSeeAll: Bool
     @ViewBuilder var content: () -> Content
 

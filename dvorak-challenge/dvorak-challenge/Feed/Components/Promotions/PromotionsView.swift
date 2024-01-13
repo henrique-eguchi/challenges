@@ -11,7 +11,10 @@ struct PromotionsView: View {
     var viewModel = PromotionsViewModel()
 
     var body: some View {
-        FeedItemStyleView(title: viewModel.title, showSeeAll: false) {
+        FeedItemStyleView(
+            title: viewModel.title,
+            showSeeAll: false
+        ) {
             WideHorizontalBannerView(
                 title: viewModel.description,
                 gradientColors: [

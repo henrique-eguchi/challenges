@@ -11,7 +11,10 @@ struct BundlesView: View {
     var viewModel = BundlesViewModel()
 
     var body: some View {
-        FeedItemStyleView(title: viewModel.title, showSeeAll: false) {
+        FeedItemStyleView(
+            title: viewModel.title,
+            showSeeAll: false
+        ) {
             WideVerticalBannerView(
                 title: viewModel.description,
                 subheading: viewModel.bundleTip,

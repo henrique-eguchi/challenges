@@ -12,6 +12,7 @@ final class EventsViewModel: ObservableObject {
     @Published var items: [EventItemModel] = []
     @Published var isFetchingData = false
     private var cancellables: Set<AnyCancellable> = []
+    let title = "Events"
 
     init() {
         fetchData()

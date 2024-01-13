@@ -15,4 +15,5 @@ final class ServicesViewModel: ObservableObject {
         ServiceModel(id: 4, name: "Cleaning", thumbnail: "Service1", details: ServiceDetailsModel(image: "Service1", description: "Cleaning description")),
         ServiceModel(id: 5, name: "Handyman", thumbnail: "Service2", details: ServiceDetailsModel(image: "Service2", description: "Handyman description")),
     ]
+    let title = "Services"
 }

@@ -11,7 +11,10 @@ struct ServicesView: View {
     @StateObject var viewModel = ServicesViewModel()
 
     var body: some View {
-        FeedItemStyleView(title: "Services", showSeeAll: true) {
+        FeedItemStyleView(
+            title: viewModel.title,
+            showSeeAll: true
+        ) {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 25) {
                     ForEach(viewModel.services, id: \.id) { service in
