@@ -28,6 +28,8 @@
 		1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */; };
 		1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0162B522000002CDBB9 /* PromotionsView.swift */; };
 		1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */; };
+		1F63A01B2B522458002CDBB9 /* BundlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A01A2B522458002CDBB9 /* BundlesViewModel.swift */; };
+		1F63A01D2B522466002CDBB9 /* PromotionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A01C2B522466002CDBB9 /* PromotionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideGradientRectangle.swift; sourceTree = "<group>"; };
 		1F63A0162B522000002CDBB9 /* PromotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsView.swift; sourceTree = "<group>"; };
 		1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideHorizontalBannerView.swift; sourceTree = "<group>"; };
+		1F63A01A2B522458002CDBB9 /* BundlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlesViewModel.swift; sourceTree = "<group>"; };
+		1F63A01C2B522466002CDBB9 /* PromotionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1F63A0072B5219C3002CDBB9 /* BundlesView.swift */,
+				1F63A01A2B522458002CDBB9 /* BundlesViewModel.swift */,
 			);
 			path = Bundles;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				1F63A0162B522000002CDBB9 /* PromotionsView.swift */,
+				1F63A01C2B522466002CDBB9 /* PromotionsViewModel.swift */,
 			);
 			path = Promotions;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				1F639FF52B521149002CDBB9 /* DvoraImages.swift in Sources */,
 				1F63A0062B521837002CDBB9 /* WelcomeViewModel.swift in Sources */,
 				1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */,
+				1F63A01B2B522458002CDBB9 /* BundlesViewModel.swift in Sources */,
 				1F639FF32B520F6F002CDBB9 /* FeedView.swift in Sources */,
 				1F639FFB2B5215B0002CDBB9 /* DvoraColors+SwiftUI.swift in Sources */,
 				1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */,
@@ -290,6 +297,7 @@
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
 				1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
+				1F63A01D2B522466002CDBB9 /* PromotionsViewModel.swift in Sources */,
 				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
 				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
 				1F639FDA2B51FF28002CDBB9 /* dvorak_challengeApp.swift in Sources */,

@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct BundlesView: View {
+    var viewModel = BundlesViewModel()
+
     var body: some View {
-        FeedItemStyleView(title: "DVORA Bundles", showSeeAll: false) {
+        FeedItemStyleView(title: viewModel.title, showSeeAll: false) {
             WideVerticalBannerView(
-                title: "Apartment & Amenities",
-                subheading: "Tap here to create your bundle in 3 steps",
+                title: viewModel.description,
+                subheading: viewModel.bundleTip,
                 gradientColors: [
                     DvoraColors.yellow,
                     DvoraColors.yellow.opacity(0.4)
@@ -20,7 +22,7 @@ struct BundlesView: View {
             )
         }
         .onTapGesture {
-            print("Bundle tapped!")
+            viewModel.fetchBundle()
         }
     }
 }

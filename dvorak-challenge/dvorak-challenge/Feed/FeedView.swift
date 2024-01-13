@@ -16,7 +16,7 @@ struct FeedView: View {
                     WelcomeView()
                     // MARK: - Events
                     BundlesView()
-                    // MARK: - Promotions
+                    PromotionsView()
                     // MARK: - CoLab
                     // MARK: - Services
                 }

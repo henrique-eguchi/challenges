@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct PromotionsView: View {
+    var viewModel = PromotionsViewModel()
+
     var body: some View {
-        FeedItemStyleView(title: "Promotions", showSeeAll: false) {
+        FeedItemStyleView(title: viewModel.title, showSeeAll: false) {
             WideHorizontalBannerView(
-                title: "20% of on any Cleaning",
+                title: viewModel.description,
                 gradientColors: [
                     DvoraColors.green,
                     DvoraColors.green.opacity(0.8)
@@ -19,7 +21,7 @@ struct PromotionsView: View {
                 imageName: "star"
             )
             .onTapGesture {
-                print("Promotion tapped!")
+                viewModel.fetchPromotion()
             }
         }
     }
