@@ -21,7 +21,7 @@ struct ItemHeaderView<Destination: View>: View {
 
             NavigationLink(destination: destination) {
                 Text(buttonText ?? "")
-                    .foregroundColor(.blue)
+                    .foregroundColor(DvoraColors.green)
             }
         }
     }

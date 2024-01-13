@@ -27,6 +27,7 @@
 		1F63A0122B521D69002CDBB9 /* WideVerticalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */; };
 		1F63A0142B521DA8002CDBB9 /* WideGradientRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */; };
 		1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0162B522000002CDBB9 /* PromotionsView.swift */; };
+		1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideVerticalBannerView.swift; sourceTree = "<group>"; };
 		1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideGradientRectangle.swift; sourceTree = "<group>"; };
 		1F63A0162B522000002CDBB9 /* PromotionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsView.swift; sourceTree = "<group>"; };
+		1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideHorizontalBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				1F63A00F2B521A77002CDBB9 /* ItemHeaderView.swift */,
 				1F63A0112B521D69002CDBB9 /* WideVerticalBannerView.swift */,
 				1F63A0132B521DA8002CDBB9 /* WideGradientRectangle.swift */,
+				1F63A0182B52208B002CDBB9 /* WideHorizontalBannerView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				1F63A0042B521798002CDBB9 /* WelcomeView.swift in Sources */,
 				1F63A0172B522000002CDBB9 /* PromotionsView.swift in Sources */,
 				1F639FEE2B520621002CDBB9 /* DvoraIcons+SwiftUI.swift in Sources */,
+				1F63A0192B52208B002CDBB9 /* WideHorizontalBannerView.swift in Sources */,
 				1F639FF72B52115F002CDBB9 /* DvoraImages+SwiftUI.swift in Sources */,
 				1F63A0082B5219C3002CDBB9 /* BundlesView.swift in Sources */,
 				1F63A0102B521A77002CDBB9 /* ItemHeaderView.swift in Sources */,
