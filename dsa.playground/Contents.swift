@@ -255,3 +255,45 @@ func encode(_ plainText: String) -> String {
 
     return result
 }
+
+
+// MARK: - Closest number to 0 - positive preference when -1 and +1 exists for instance -> [5, -2, 8, -1, 3, -4] -> -1
+
+func closestToZero(_ array: [Int]) -> Int {
+    guard !array.isEmpty else {
+        return 0
+    }
+
+    var closestValue = array[0]
+
+    for value in array {
+        if abs(value) < abs(closestValue) || (abs(value) == abs(closestValue) && value > 0) {
+            closestValue = value
+        }
+    }
+
+    return closestValue
+}
+
+
+// MARK: - Binary search - Divide-and-conquer algorithm - O(log n) - Array should be ordered
+
+func binarySearch(_ array: [Int], target: Int) -> Bool {
+    var low = 0
+    var high = array.count - 1
+
+    while low <= high {
+        let mid = (low + high) / 2
+        let midValue = array[mid]
+
+        if midValue == target {
+            return true
+        } else if midValue < target {
+            low = mid + 1
+        } else {
+            high = mid - 1
+        }
+    }
+
+    return false
+}
