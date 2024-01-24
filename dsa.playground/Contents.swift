@@ -186,3 +186,72 @@ func shortestPositiveInteger(_ A : [Int]) -> Int {
 
 shortestPositiveInteger([1, 3, 6, 4, 1, 2])
 // Result: 5
+
+
+// MARK: - Dance Algorithm - sort of Fibonacci + Finite pattern
+
+// STAGE (N)
+//   0    --------------------|---------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     0  |   0
+    
+//   1    -----------------------|------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     1  |  +1
+    
+//   2    -----------------|------------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     -1 |  -2      
+    
+//   3    -----|------------------------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     -4 |  -3      STEPS(N) = STEPS(N-1) - STEPS(N-2) => POS(N) = POS(N-1) + STEPS(N)
+    
+//   4    -|----------------------------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     -5 |  -1
+    
+//   5    ---------|--------------------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     -3 |  +2
+
+// Pattern end
+
+//   6    --------------------|---------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     0  |  +3
+    
+//   7    -----------------------|------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     1  |  +1
+    
+//   8    -----------------|------------------    POS | STEPS
+//        -5  -4  -3  -2  -1  0  1  2  3  4  5     -1 |  -2
+
+// ...
+
+// Solution
+
+func getPosition(at n: Int) -> Int {
+    let positions = [0, 1, -1, -4, -5, -3]
+    return positions[n % 6]
+}
+
+
+// MARK: - Text encoding - aaaaaabbccaaaa to 6a2b2c4a
+
+func encode(_ plainText: String) -> String {
+    var result = ""
+
+    guard !plainText.isEmpty else {
+        return result
+    }
+    
+    var currentChar: Character = plainText.first!
+    var charCount = 1
+
+    for char in plainText.dropFirst() {
+        if char == currentChar {
+            charCount += 1
+        } else {
+            result.append("\(charCount)\(currentChar)")
+            charCount = 1
+            currentChar = char
+        }
+    }
+    result.append("\(charCount)\(currentChar)")
+
+    return result
+}
