@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2463D32B796EF300084A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2463D22B796EF300084A75 /* AppDelegate.swift */; };
+		1F2463D52B796EF300084A75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2463D42B796EF300084A75 /* SceneDelegate.swift */; };
+		1F2463D72B796EF300084A75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2463D62B796EF300084A75 /* ViewController.swift */; };
+		1F2463DA2B796EF300084A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2463D82B796EF300084A75 /* Main.storyboard */; };
+		1F2463DC2B796EF500084A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2463DB2B796EF500084A75 /* Assets.xcassets */; };
+		1F2463DF2B796EF500084A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2463DD2B796EF500084A75 /* LaunchScreen.storyboard */; };
+		1F2463EA2B796EF500084A75 /* SanFranciscoFoodTrucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2463E92B796EF500084A75 /* SanFranciscoFoodTrucksTests.swift */; };
+		1F2463F42B796EF500084A75 /* SanFranciscoFoodTrucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2463F32B796EF500084A75 /* SanFranciscoFoodTrucksUITests.swift */; };
+		1F2463F62B796EF500084A75 /* SanFranciscoFoodTrucksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2463F52B796EF500084A75 /* SanFranciscoFoodTrucksUITestsLaunchTests.swift */; };
+		1F2464092B7979AF00084A75 /* Date+FormattedDateStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464082B7979AF00084A75 /* Date+FormattedDateStrings.swift */; };
+		1F24640D2B797ACB00084A75 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24640C2B797ACB00084A75 /* HTTPClient.swift */; };
+		1F24640F2B797AEA00084A75 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24640E2B797AEA00084A75 /* URLSessionHTTPClient.swift */; };
+		1F2464122B7994D600084A75 /* PaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464112B7994D600084A75 /* PaginationHelper.swift */; };
+		1F2464172B79954500084A75 /* FoodTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464162B79954500084A75 /* FoodTruck.swift */; };
+		1F2464192B7995AE00084A75 /* FoodTruckListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464182B7995AE00084A75 /* FoodTruckListLoader.swift */; };
+		1F24641E2B7999E900084A75 /* FoodTruckListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24641C2B7999E900084A75 /* FoodTruckListMapper.swift */; };
+		1F24641F2B7999E900084A75 /* RemoteFoodTruckListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24641D2B7999E900084A75 /* RemoteFoodTruckListLoader.swift */; };
+		1F2464292B7A5FCD00084A75 /* FoodTruckListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464282B7A5FCD00084A75 /* FoodTruckListViewModel.swift */; };
+		1F24642C2B7A6A1A00084A75 /* FoodTruckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24642B2B7A6A1A00084A75 /* FoodTruckListViewController.swift */; };
+		1F24642F2B7A7EB100084A75 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24642E2B7A7EB100084A75 /* UITableView+Register.swift */; };
+		1F2464312B7AB60B00084A75 /* FoodTruckCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464302B7AB60B00084A75 /* FoodTruckCellController.swift */; };
+		1F2464332B7ABA9E00084A75 /* FoodTruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464322B7ABA9E00084A75 /* FoodTruckTableViewCell.swift */; };
+		1F2464352B7ABAE200084A75 /* FoodTruckCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464342B7ABAE200084A75 /* FoodTruckCellViewModel.swift */; };
+		1F2464372B7ABCC400084A75 /* MainQueueDispatchDecorator+Loaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464362B7ABCC400084A75 /* MainQueueDispatchDecorator+Loaders.swift */; };
+		1F2464392B7ABDA100084A75 /* FoodTruckListUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2464382B7ABDA100084A75 /* FoodTruckListUIComposer.swift */; };
+		1F24643B2B7AC3D200084A75 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24643A2B7AC3D200084A75 /* MainQueueDispatchDecorator.swift */; };
+		1F24643E2B7AD43600084A75 /* RemoteFoodTruckMapLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24643D2B7AD43600084A75 /* RemoteFoodTruckMapLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F2463E62B796EF500084A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2463C72B796EF300084A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2463CE2B796EF300084A75;
+			remoteInfo = SanFranciscoFoodTrucks;
+		};
+		1F2463F02B796EF500084A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2463C72B796EF300084A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2463CE2B796EF300084A75;
+			remoteInfo = SanFranciscoFoodTrucks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F2463CF2B796EF300084A75 /* SanFranciscoFoodTrucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanFranciscoFoodTrucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2463D22B796EF300084A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F2463D42B796EF300084A75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F2463D62B796EF300084A75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F2463D92B796EF300084A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F2463DB2B796EF500084A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F2463DE2B796EF500084A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F2463E02B796EF500084A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2463E52B796EF500084A75 /* SanFranciscoFoodTrucksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanFranciscoFoodTrucksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2463E92B796EF500084A75 /* SanFranciscoFoodTrucksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanFranciscoFoodTrucksTests.swift; sourceTree = "<group>"; };
+		1F2463EF2B796EF500084A75 /* SanFranciscoFoodTrucksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanFranciscoFoodTrucksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2463F32B796EF500084A75 /* SanFranciscoFoodTrucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanFranciscoFoodTrucksUITests.swift; sourceTree = "<group>"; };
+		1F2463F52B796EF500084A75 /* SanFranciscoFoodTrucksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanFranciscoFoodTrucksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1F2464082B7979AF00084A75 /* Date+FormattedDateStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FormattedDateStrings.swift"; sourceTree = "<group>"; };
+		1F24640C2B797ACB00084A75 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		1F24640E2B797AEA00084A75 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		1F2464112B7994D600084A75 /* PaginationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationHelper.swift; sourceTree = "<group>"; };
+		1F2464162B79954500084A75 /* FoodTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruck.swift; sourceTree = "<group>"; };
+		1F2464182B7995AE00084A75 /* FoodTruckListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckListLoader.swift; sourceTree = "<group>"; };
+		1F24641C2B7999E900084A75 /* FoodTruckListMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTruckListMapper.swift; sourceTree = "<group>"; };
+		1F24641D2B7999E900084A75 /* RemoteFoodTruckListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFoodTruckListLoader.swift; sourceTree = "<group>"; };
+		1F2464282B7A5FCD00084A75 /* FoodTruckListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckListViewModel.swift; sourceTree = "<group>"; };
+		1F24642B2B7A6A1A00084A75 /* FoodTruckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckListViewController.swift; sourceTree = "<group>"; };
+		1F24642E2B7A7EB100084A75 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		1F2464302B7AB60B00084A75 /* FoodTruckCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckCellController.swift; sourceTree = "<group>"; };
+		1F2464322B7ABA9E00084A75 /* FoodTruckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckTableViewCell.swift; sourceTree = "<group>"; };
+		1F2464342B7ABAE200084A75 /* FoodTruckCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckCellViewModel.swift; sourceTree = "<group>"; };
+		1F2464362B7ABCC400084A75 /* MainQueueDispatchDecorator+Loaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainQueueDispatchDecorator+Loaders.swift"; sourceTree = "<group>"; };
+		1F2464382B7ABDA100084A75 /* FoodTruckListUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckListUIComposer.swift; sourceTree = "<group>"; };
+		1F24643A2B7AC3D200084A75 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
+		1F24643D2B7AD43600084A75 /* RemoteFoodTruckMapLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFoodTruckMapLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F2463CC2B796EF300084A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2463E22B796EF500084A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2463EC2B796EF500084A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F2463C62B796EF300084A75 = {
+			isa = PBXGroup;
+			children = (
+				1F2464102B79949B00084A75 /* Common */,
+				1F2464072B79793A00084A75 /* Helpers */,
+				1F24640B2B797AB500084A75 /* Service */,
+				1F2463D12B796EF300084A75 /* SanFranciscoFoodTrucks */,
+				1F2464212B799BE700084A75 /* SanFranciscoFoodTrucksiOS */,
+				1F2464202B799A8200084A75 /* App */,
+				1F2463E82B796EF500084A75 /* SanFranciscoFoodTrucksTests */,
+				1F2463F22B796EF500084A75 /* SanFranciscoFoodTrucksUITests */,
+				1F2463D02B796EF300084A75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F2463D02B796EF300084A75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F2463CF2B796EF300084A75 /* SanFranciscoFoodTrucks.app */,
+				1F2463E52B796EF500084A75 /* SanFranciscoFoodTrucksTests.xctest */,
+				1F2463EF2B796EF500084A75 /* SanFranciscoFoodTrucksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F2463D12B796EF300084A75 /* SanFranciscoFoodTrucks */ = {
+			isa = PBXGroup;
+			children = (
+				1F24643C2B7AD41F00084A75 /* FoodTruck Map Service */,
+				1F24640A2B797A4800084A75 /* FoodTruck List Feature */,
+				1F24641B2B7999E900084A75 /* FoodTruck List Service */,
+			);
+			path = SanFranciscoFoodTrucks;
+			sourceTree = "<group>";
+		};
+		1F2463E82B796EF500084A75 /* SanFranciscoFoodTrucksTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F2463E92B796EF500084A75 /* SanFranciscoFoodTrucksTests.swift */,
+			);
+			path = SanFranciscoFoodTrucksTests;
+			sourceTree = "<group>";
+		};
+		1F2463F22B796EF500084A75 /* SanFranciscoFoodTrucksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F2463F32B796EF500084A75 /* SanFranciscoFoodTrucksUITests.swift */,
+				1F2463F52B796EF500084A75 /* SanFranciscoFoodTrucksUITestsLaunchTests.swift */,
+			);
+			path = SanFranciscoFoodTrucksUITests;
+			sourceTree = "<group>";
+		};
+		1F2464072B79793A00084A75 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464082B7979AF00084A75 /* Date+FormattedDateStrings.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1F24640A2B797A4800084A75 /* FoodTruck List Feature */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464162B79954500084A75 /* FoodTruck.swift */,
+				1F2464182B7995AE00084A75 /* FoodTruckListLoader.swift */,
+			);
+			path = "FoodTruck List Feature";
+			sourceTree = "<group>";
+		};
+		1F24640B2B797AB500084A75 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F24640C2B797ACB00084A75 /* HTTPClient.swift */,
+				1F24640E2B797AEA00084A75 /* URLSessionHTTPClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1F2464102B79949B00084A75 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464112B7994D600084A75 /* PaginationHelper.swift */,
+				1F24643A2B7AC3D200084A75 /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F24641B2B7999E900084A75 /* FoodTruck List Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F24641C2B7999E900084A75 /* FoodTruckListMapper.swift */,
+				1F24641D2B7999E900084A75 /* RemoteFoodTruckListLoader.swift */,
+			);
+			path = "FoodTruck List Service";
+			sourceTree = "<group>";
+		};
+		1F2464202B799A8200084A75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1F2463D22B796EF300084A75 /* AppDelegate.swift */,
+				1F2463D42B796EF300084A75 /* SceneDelegate.swift */,
+				1F2463D62B796EF300084A75 /* ViewController.swift */,
+				1F2463D82B796EF300084A75 /* Main.storyboard */,
+				1F2463DB2B796EF500084A75 /* Assets.xcassets */,
+				1F2463DD2B796EF500084A75 /* LaunchScreen.storyboard */,
+				1F2463E02B796EF500084A75 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1F2464212B799BE700084A75 /* SanFranciscoFoodTrucksiOS */ = {
+			isa = PBXGroup;
+			children = (
+				1F24642D2B7A7E9E00084A75 /* Helpers */,
+				1F2464222B799C0700084A75 /* List UI */,
+				1F2464232B799C1F00084A75 /* Map UI */,
+			);
+			path = SanFranciscoFoodTrucksiOS;
+			sourceTree = "<group>";
+		};
+		1F2464222B799C0700084A75 /* List UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464242B799C2F00084A75 /* Composers */,
+				1F2464252B799C3700084A75 /* Models */,
+				1F2464262B799C4B00084A75 /* Controllers */,
+				1F2464272B799C5200084A75 /* Views */,
+			);
+			path = "List UI";
+			sourceTree = "<group>";
+		};
+		1F2464232B799C1F00084A75 /* Map UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Map UI";
+			sourceTree = "<group>";
+		};
+		1F2464242B799C2F00084A75 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464382B7ABDA100084A75 /* FoodTruckListUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		1F2464252B799C3700084A75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464282B7A5FCD00084A75 /* FoodTruckListViewModel.swift */,
+				1F2464342B7ABAE200084A75 /* FoodTruckCellViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F2464262B799C4B00084A75 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F24642B2B7A6A1A00084A75 /* FoodTruckListViewController.swift */,
+				1F2464302B7AB60B00084A75 /* FoodTruckCellController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1F2464272B799C5200084A75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F2464322B7ABA9E00084A75 /* FoodTruckTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F24642D2B7A7E9E00084A75 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1F24642E2B7A7EB100084A75 /* UITableView+Register.swift */,
+				1F2464362B7ABCC400084A75 /* MainQueueDispatchDecorator+Loaders.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1F24643C2B7AD41F00084A75 /* FoodTruck Map Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F24643D2B7AD43600084A75 /* RemoteFoodTruckMapLoader.swift */,
+			);
+			path = "FoodTruck Map Service";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F2463CE2B796EF300084A75 /* SanFranciscoFoodTrucks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2463F92B796EF500084A75 /* Build configuration list for PBXNativeTarget "SanFranciscoFoodTrucks" */;
+			buildPhases = (
+				1F2463CB2B796EF300084A75 /* Sources */,
+				1F2463CC2B796EF300084A75 /* Frameworks */,
+				1F2463CD2B796EF300084A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SanFranciscoFoodTrucks;
+			productName = SanFranciscoFoodTrucks;
+			productReference = 1F2463CF2B796EF300084A75 /* SanFranciscoFoodTrucks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F2463E42B796EF500084A75 /* SanFranciscoFoodTrucksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2463FC2B796EF500084A75 /* Build configuration list for PBXNativeTarget "SanFranciscoFoodTrucksTests" */;
+			buildPhases = (
+				1F2463E12B796EF500084A75 /* Sources */,
+				1F2463E22B796EF500084A75 /* Frameworks */,
+				1F2463E32B796EF500084A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F2463E72B796EF500084A75 /* PBXTargetDependency */,
+			);
+			name = SanFranciscoFoodTrucksTests;
+			productName = SanFranciscoFoodTrucksTests;
+			productReference = 1F2463E52B796EF500084A75 /* SanFranciscoFoodTrucksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F2463EE2B796EF500084A75 /* SanFranciscoFoodTrucksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2463FF2B796EF500084A75 /* Build configuration list for PBXNativeTarget "SanFranciscoFoodTrucksUITests" */;
+			buildPhases = (
+				1F2463EB2B796EF500084A75 /* Sources */,
+				1F2463EC2B796EF500084A75 /* Frameworks */,
+				1F2463ED2B796EF500084A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F2463F12B796EF500084A75 /* PBXTargetDependency */,
+			);
+			name = SanFranciscoFoodTrucksUITests;
+			productName = SanFranciscoFoodTrucksUITests;
+			productReference = 1F2463EF2B796EF500084A75 /* SanFranciscoFoodTrucksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F2463C72B796EF300084A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					1F2463CE2B796EF300084A75 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					1F2463E42B796EF500084A75 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 1F2463CE2B796EF300084A75;
+					};
+					1F2463EE2B796EF500084A75 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 1F2463CE2B796EF300084A75;
+					};
+				};
+			};
+			buildConfigurationList = 1F2463CA2B796EF300084A75 /* Build configuration list for PBXProject "SanFranciscoFoodTrucks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F2463C62B796EF300084A75;
+			productRefGroup = 1F2463D02B796EF300084A75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F2463CE2B796EF300084A75 /* SanFranciscoFoodTrucks */,
+				1F2463E42B796EF500084A75 /* SanFranciscoFoodTrucksTests */,
+				1F2463EE2B796EF500084A75 /* SanFranciscoFoodTrucksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F2463CD2B796EF300084A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2463DF2B796EF500084A75 /* LaunchScreen.storyboard in Resources */,
+				1F2463DC2B796EF500084A75 /* Assets.xcassets in Resources */,
+				1F2463DA2B796EF300084A75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2463E32B796EF500084A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2463ED2B796EF500084A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F2463CB2B796EF300084A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2464172B79954500084A75 /* FoodTruck.swift in Sources */,
+				1F24640F2B797AEA00084A75 /* URLSessionHTTPClient.swift in Sources */,
+				1F2464392B7ABDA100084A75 /* FoodTruckListUIComposer.swift in Sources */,
+				1F24642F2B7A7EB100084A75 /* UITableView+Register.swift in Sources */,
+				1F2464292B7A5FCD00084A75 /* FoodTruckListViewModel.swift in Sources */,
+				1F2463D72B796EF300084A75 /* ViewController.swift in Sources */,
+				1F2464092B7979AF00084A75 /* Date+FormattedDateStrings.swift in Sources */,
+				1F2464312B7AB60B00084A75 /* FoodTruckCellController.swift in Sources */,
+				1F2464122B7994D600084A75 /* PaginationHelper.swift in Sources */,
+				1F24641E2B7999E900084A75 /* FoodTruckListMapper.swift in Sources */,
+				1F24640D2B797ACB00084A75 /* HTTPClient.swift in Sources */,
+				1F2464372B7ABCC400084A75 /* MainQueueDispatchDecorator+Loaders.swift in Sources */,
+				1F2463D32B796EF300084A75 /* AppDelegate.swift in Sources */,
+				1F2464332B7ABA9E00084A75 /* FoodTruckTableViewCell.swift in Sources */,
+				1F2464192B7995AE00084A75 /* FoodTruckListLoader.swift in Sources */,
+				1F24643E2B7AD43600084A75 /* RemoteFoodTruckMapLoader.swift in Sources */,
+				1F2463D52B796EF300084A75 /* SceneDelegate.swift in Sources */,
+				1F24643B2B7AC3D200084A75 /* MainQueueDispatchDecorator.swift in Sources */,
+				1F24642C2B7A6A1A00084A75 /* FoodTruckListViewController.swift in Sources */,
+				1F24641F2B7999E900084A75 /* RemoteFoodTruckListLoader.swift in Sources */,
+				1F2464352B7ABAE200084A75 /* FoodTruckCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2463E12B796EF500084A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2463EA2B796EF500084A75 /* SanFranciscoFoodTrucksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2463EB2B796EF500084A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2463F62B796EF500084A75 /* SanFranciscoFoodTrucksUITestsLaunchTests.swift in Sources */,
+				1F2463F42B796EF500084A75 /* SanFranciscoFoodTrucksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F2463E72B796EF500084A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2463CE2B796EF300084A75 /* SanFranciscoFoodTrucks */;
+			targetProxy = 1F2463E62B796EF500084A75 /* PBXContainerItemProxy */;
+		};
+		1F2463F12B796EF500084A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2463CE2B796EF300084A75 /* SanFranciscoFoodTrucks */;
+			targetProxy = 1F2463F02B796EF500084A75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F2463D82B796EF300084A75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2463D92B796EF300084A75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F2463DD2B796EF500084A75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2463DE2B796EF500084A75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F2463F72B796EF500084A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F2463F82B796EF500084A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F2463FA2B796EF500084A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3T5JNALVT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heguchi.SanFranciscoFoodTrucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F2463FB2B796EF500084A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3T5JNALVT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heguchi.SanFranciscoFoodTrucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F2463FD2B796EF500084A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3T5JNALVT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heguchi.SanFranciscoFoodTrucksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanFranciscoFoodTrucks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SanFranciscoFoodTrucks";
+			};
+			name = Debug;
+		};
+		1F2463FE2B796EF500084A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3T5JNALVT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heguchi.SanFranciscoFoodTrucksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanFranciscoFoodTrucks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SanFranciscoFoodTrucks";
+			};
+			name = Release;
+		};
+		1F2464002B796EF500084A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3T5JNALVT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heguchi.SanFranciscoFoodTrucksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SanFranciscoFoodTrucks;
+			};
+			name = Debug;
+		};
+		1F2464012B796EF500084A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3T5JNALVT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heguchi.SanFranciscoFoodTrucksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SanFranciscoFoodTrucks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F2463CA2B796EF300084A75 /* Build configuration list for PBXProject "SanFranciscoFoodTrucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2463F72B796EF500084A75 /* Debug */,
+				1F2463F82B796EF500084A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2463F92B796EF500084A75 /* Build configuration list for PBXNativeTarget "SanFranciscoFoodTrucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2463FA2B796EF500084A75 /* Debug */,
+				1F2463FB2B796EF500084A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2463FC2B796EF500084A75 /* Build configuration list for PBXNativeTarget "SanFranciscoFoodTrucksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2463FD2B796EF500084A75 /* Debug */,
+				1F2463FE2B796EF500084A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2463FF2B796EF500084A75 /* Build configuration list for PBXNativeTarget "SanFranciscoFoodTrucksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2464002B796EF500084A75 /* Debug */,
+				1F2464012B796EF500084A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F2463C72B796EF300084A75 /* Project object */;
+}
