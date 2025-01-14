@@ -10,6 +10,14 @@
 
 ## How long did you spend on this project?
 
+## Did you make any trade-offs for this project? What would you have done differently with more time?
+
+## What do you think is the weakest part of your project?
+
+## Is there any other information you’d like us to know?
+
+## Logbook
+
 - Started test on Jan 14 at 7:40PM
 - Created repository at 7:45PM
 - Started reading challenge docs at 7:48PM
@@ -22,10 +30,3 @@
   - Unit tests are important so I will develop things that's not related to the UI with tests just to avoid having a third-party dependencies to deal with snapshot tests
 - Finished initial plan at 8:08PM
 - Paused progress at 8:08PM
-
-
-## Did you make any trade-offs for this project? What would you have done differently with more time?
-
-## What do you think is the weakest part of your project?
-
-## Is there any other information you’d like us to know?
