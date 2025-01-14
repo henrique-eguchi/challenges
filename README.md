@@ -30,3 +30,5 @@
   - Unit tests are important so I will develop things that's not related to the UI with tests just to avoid having a third-party dependencies to deal with snapshot tests
 - Finished initial plan at 8:08PM
 - Paused progress at 8:08PM
+- Resumed at 8:15PM
+- Started developing project / docs
