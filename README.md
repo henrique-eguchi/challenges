@@ -16,6 +16,86 @@
 
 ## Is there any other information you’d like us to know?
 
+
+---
+
+# mempool.space Case 
+
+## Top Nodes by Connectivity List feature specs
+
+### Story: Customer requests to see the top nodes by connectivity list
+
+```
+As a customer
+I want the app to automatically load a list of the top nodes by connectivity
+So I can see the top lightning nodes with opened channels
+```
+
+#### Scenarios (Acceptance criteria)
+
+```
+Given the customer has connectivity
+When the customer opens up the app
+Then the app should display the list of the top lightning nodes by connectivity
+```
+
+## Use Cases
+
+### Load Top Nodes by Connectivity from Remote Use Case
+
+#### Data:
+- URL
+
+#### Primary course (happy path):
+1. Execute "Load Top Nodes by Connectivity" with above data.
+2. System downloads data from the URL.
+3. System validates downloaded data.
+4. System creates nodes from valid data.
+5. System delivers nodes data.
+
+#### Invalid data - error course (sad path):
+1. System delivers invalid data error.
+
+#### No connectivity – error course (sad path):
+1. System delivers connectivity error.
+
+---
+
+## Model Specs
+
+### Node
+
+| Property      | Type              |
+|---------------|-------------------|
+| `publicKey`   | `String`          |
+| `channels`    | `Int`             |
+| `capacity`    | `Int`             |
+| `firstSeen`   | `Int`             |
+| `updatedAt`   | `Int`             |
+| `city`        | `LocatedName?`    |
+| `country`     | `LocatedName?`    |
+| `isoCode`     | `String?`         |
+| `subdivision` | `String?`         |
+
+### LocatedName
+
+| Property      | Type          |
+|---------------|---------------|
+| `en`          | `String`      |
+| `ptBR`        | `String?`     |
+
+### Payload contract
+
+```
+GET /api/v1/lightning/nodes/rankings/connectivity
+
+200 RESPONSE
+
+> See top-100-nodes-by-connectivity-sample.json
+```
+
+---
+
 ## Logbook
 
 - Started test on Jan 14 at 7:40PM
@@ -32,3 +112,5 @@
 - Paused progress at 8:08PM
 - Resumed at 8:15PM
 - Started developing project / docs
+- Finished docs for node listing at 8:46PM
+- Paused progress at 8:46PM
