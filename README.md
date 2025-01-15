@@ -1,20 +1,22 @@
 # bipa-ios-test
 
-## Build tools & versions used
+### Build tools & versions used
 
-## Steps to run the app
+- Xcode 16.2 / iOS 18.2
 
-## What areas of the app did you focus on?
+### Steps to run the app
 
-## What was the reason for your focus? What problems were you trying to solve?
+### What areas of the app did you focus on?
 
-## How long did you spend on this project?
+### What was the reason for your focus? What problems were you trying to solve?
 
-## Did you make any trade-offs for this project? What would you have done differently with more time?
+### How long did you spend on this project?
 
-## What do you think is the weakest part of your project?
+### Did you make any trade-offs for this project? What would you have done differently with more time?
 
-## Is there any other information you’d like us to know?
+### What do you think is the weakest part of your project?
+
+### Is there any other information you’d like us to know?
 
 
 ---
@@ -68,14 +70,13 @@ Then the app should display the list of the top lightning nodes by connectivity
 | Property      | Type              |
 |---------------|-------------------|
 | `publicKey`   | `String`          |
+| `alias`       | `String`          |
 | `channels`    | `Int`             |
 | `capacity`    | `Int`             |
 | `firstSeen`   | `Int`             |
 | `updatedAt`   | `Int`             |
 | `city`        | `LocatedName?`    |
 | `country`     | `LocatedName?`    |
-| `isoCode`     | `String?`         |
-| `subdivision` | `String?`         |
 
 ### LocatedName
 
@@ -98,6 +99,8 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 
 ## Logbook
 
+### Jan 14
+
 - Started test on Jan 14 at 7:40PM
 - Created repository at 7:45PM
 - Started reading challenge docs at 7:48PM
@@ -113,4 +116,8 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 - Resumed at 8:15PM
 - Started developing project / docs
 - Finished docs for node listing at 8:46PM
-- Paused progress at 8:46PM
+- Paused progress on Jan 14 at 8:46PM
+
+### Jan 15
+
+- Started developing project at 7:52PM
