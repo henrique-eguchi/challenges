@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "9723E3C1-1D30-48B3-A79C-7E644A768F29",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:bipa-ios-test.xcodeproj",
+      "identifier" : "1F1278092D387460006EEF78",
+      "name" : "bipa-ios-test"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:bipa-ios-test.xcodeproj",
+        "identifier" : "1F1278192D387461006EEF78",
+        "name" : "bipa-ios-testTests"
+      }
+    }
+  ],
+  "version" : 1
+}
