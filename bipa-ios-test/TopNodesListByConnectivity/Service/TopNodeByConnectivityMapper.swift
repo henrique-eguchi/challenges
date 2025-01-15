@@ -1,11 +1,11 @@
 //
-//  TopNodeMapper.swift
+//  TopNodeByConnectivityMapper.swift
 //  bipa-ios-test
 //
 //  Created by Henrique Akiyoshi Eguchi on 15/01/25.
 //
 
-final class TopNodeMapper {
+final class TopNodeByConnectivityMapper {
     struct TopNode: Decodable {
         let publicKey: String
         let alias: String
