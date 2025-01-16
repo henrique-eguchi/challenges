@@ -6,13 +6,21 @@
 
 ### Steps to run the app
 
+- Open bipa-ios-test.xcodeproj and run the project
+
 ### What areas of the app did you focus on?
 
-### What was the reason for your focus? What problems were you trying to solve?
+- Most of the time the app architecture, service, domain models and mapping (from API models)
+
+### What was the reason for your focus? What problems were you trying to solve?\
+
+- Because it concentrates the business logic
 
 ### How long did you spend on this project?
 
 ### Did you make any trade-offs for this project? What would you have done differently with more time?
+
+- SwiftUI over UIKit to show off SwiftUI skills while losing the possibility of unit testing
 
 ### What do you think is the weakest part of your project?
 
@@ -121,3 +129,4 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 ### Jan 15
 
 - Started developing project at 7:52PM
+- Paused progress at 9:21PM
