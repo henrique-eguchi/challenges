@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TopNode {
+struct TopNode: Identifiable {
     let publicKey: String
     let alias: String
     let channels: Int
@@ -16,6 +16,7 @@ struct TopNode {
     let updatedAt: Int
     let city: String?
     let country: String?
+    var id: String { publicKey }
 
     var locationDescription: String? {
         if let city = city,

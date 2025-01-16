@@ -11,7 +11,14 @@ import SwiftUI
 struct bipa_ios_testApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TopNodesListByConnectivityView(
+                viewModel: TopNodesByConnectivityViewModel(
+                    topNodesService: RemoteTopNodesByConnectivityService(
+                        url: URL(string: "https://mempool.space/api/v1/lightning/nodes/rankings/connectivity")!,
+                        client: URLSessionHTTPClient()
+                    )
+                )
+            )
         }
     }
 }
