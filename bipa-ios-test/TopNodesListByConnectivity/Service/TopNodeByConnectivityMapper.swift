@@ -8,13 +8,7 @@
 import Foundation
 
 final class TopNodeByConnectivityMapper {
-    struct Root: Decodable {
-        let topNodes: [TopNodeServiceModel]
-
-        var topNodesList: [TopNode] {
-            topNodes.map { $0.topNode}
-        }
-    }
+    typealias TopNodeListServiceModel = [TopNodeServiceModel]
 
     struct TopNodeServiceModel: Decodable {
         let publicKey: String
@@ -44,6 +38,11 @@ final class TopNodeByConnectivityMapper {
         let en: String
         let ptBR: String?
 
+        enum CodingKeys: String, CodingKey {
+            case en
+            case ptBR = "pt-BR"
+        }
+
         var locatedName: String {
             ptBR ?? en
         }
@@ -51,9 +50,9 @@ final class TopNodeByConnectivityMapper {
 
     static func map(_ data: Data, from response: HTTPURLResponse) -> RemoteTopNodesByConnectivityService.Result {
         guard response.statusCode == HTTPStatusCode.OK_200,
-              let root = try? JSONDecoder().decode(Root.self, from: data) else {
+              let root = try? JSONDecoder().decode(TopNodeListServiceModel.self, from: data) else {
             return .failure(RemoteTopNodesByConnectivityService.Error.invalidData)
         }
-        return .success(root.topNodesList)
+        return .success(root.map { $0.topNode })
     }
 }
