@@ -17,11 +17,12 @@ struct TopNodesListByConnectivityView: View {
                 case .initial:
                     Text("Initial")
                 case .loading:
-                    ProgressView("Loading nodes...")
+                    ProgressView()
                 case .success(let nodes):
                     List(nodes) { node in
-                        NodeRow(node: node)
+                        TopNodeItem(node: node)
                     }
+                    .listRowSeparator(.hidden)
                 case .failure(let error):
                     Text("Error fetching nodes: \(error.localizedDescription)")
                 }
@@ -33,17 +34,6 @@ struct TopNodesListByConnectivityView: View {
             .onAppear {
                 viewModel.fetchNodes()
             }
-        }
-    }
-}
-
-struct NodeRow: View {
-    let node: TopNode
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(node.alias)
-            Text("Capacity: \(node.capacityInBTCDescription) BTC")
         }
     }
 }

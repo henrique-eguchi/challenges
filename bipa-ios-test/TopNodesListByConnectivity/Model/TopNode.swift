@@ -63,4 +63,42 @@ struct TopNode: Identifiable {
         formatter.maximumFractionDigits = 8
         return formatter.string(from: nodeCapacityInBTC as NSDecimalNumber) ?? "Erro na formatação"
     }
+
+    var channelCountDescription: String {
+        formatChannelCount(channels)
+    }
+
+    private func formatChannelCount(_ count: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "en-US")
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 1
+
+        if count >= 1_000_000 {
+            let millions = Double(count) / 1_000_000
+            return formatter.string(for: millions)?.appending("M") ?? "\(count)"
+        } else if count >= 1_000 {
+            let thousands = Double(count) / 1_000
+            return formatter.string(for: thousands)?.appending("K") ?? "\(count)"
+        } else {
+            return "\(count)"
+        }
+    }
+
+    var truncatedPublicKey: String {
+        truncateMiddle(text: publicKey, length: 15)
+    }
+
+    private func truncateMiddle(text: String, length: Int) -> String {
+        guard text.count > length else { return text }
+
+        let startIndex = text.startIndex
+        let endIndex = text.index(startIndex, offsetBy: length / 2)
+        let startIndex2 = text.index(text.endIndex, offsetBy: -(length / 2))
+
+        let firstPart = String(text[startIndex..<endIndex])
+        let lastPart = String(text[startIndex2..<text.endIndex])
+
+        return "\(firstPart)...\(lastPart)"
+    }
 }
