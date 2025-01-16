@@ -6,7 +6,7 @@
 //
 
 protocol TopNodesByConnectivityServiceProtocol: AnyObject {
-    typealias Result = @Sendable (Swift.Result<[TopNode], Error>) -> Void
+    typealias Result = Swift.Result<[TopNode], Error>
 
-    func fetchTopNodesByConnectivity(completion: @escaping Result)
+    func fetchTopNodesByConnectivity(completion: @escaping (Result) -> Void)
 }
