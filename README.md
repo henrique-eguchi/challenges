@@ -10,13 +10,15 @@
 
 ### What areas of the app did you focus on?
 
-- Most of the time the app architecture, service, domain models and mapping (from API models)
+- Most of the time the app architecture, service and domain models
 
-### What was the reason for your focus? What problems were you trying to solve?\
+### What was the reason for your focus? What problems were you trying to solve?
 
 - Because it concentrates the business logic
 
 ### How long did you spend on this project?
+
+- The total time spent on the project is ~4 hours
 
 ### Did you make any trade-offs for this project? What would you have done differently with more time?
 
@@ -24,8 +26,13 @@
 
 ### What do you think is the weakest part of your project?
 
+- UI is not that good, it's readable though haha. For instance, here's a swiftui challenge I did in the past that show up my SwiftUI skills based on a prototype https://github.com/henrique-eguchi/challenges/tree/main/SwiftUI/dvorak-challenge
+
 ### Is there any other information you’d like us to know?
 
+- There's some generic functions inside TopNode that I will eventually move to a proper place
+- I haven't created a place we can compose our app, so it's just calling our list
+- I would write more unit tests for the VM and Service but couldn't complete on time
 
 ---
 
@@ -131,3 +138,4 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 - Started developing project at 7:52PM
 - Paused progress at 9:21PM
 - Resumed progress at 10:00PM
+- Stopped at 12AM
