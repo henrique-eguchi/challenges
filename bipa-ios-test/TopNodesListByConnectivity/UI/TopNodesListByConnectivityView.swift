@@ -21,13 +21,18 @@ struct TopNodesListByConnectivityView: View {
                 case .success(let nodes):
                     List(nodes) { node in
                         TopNodeItem(node: node)
+                            .listRowBackground(
+                                Color("BipaBackground")
+                                    .cornerRadius(5)
+                            )
                     }
                     .listRowSeparator(.hidden)
+                    .listRowSpacing(10)
                 case .failure(let error):
                     Text("Error fetching nodes: \(error.localizedDescription)")
                 }
             }
-            .navigationTitle("Top Nodes by Connectivity List")
+            .navigationTitle("Top Nodes")
             .refreshable {
                 viewModel.fetchNodes()
             }

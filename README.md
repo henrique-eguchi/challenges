@@ -139,3 +139,11 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 - Paused progress at 9:21PM
 - Resumed progress at 10:00PM
 - Stopped at 12AM
+
+
+## [Extra] Please don't take this into account
+
+### Jan 21
+
+- Started tweaks on UI at 10:30PM
+- Finished tweaks on UI at 11:30PM

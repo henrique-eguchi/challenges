@@ -12,44 +12,82 @@ struct TopNodeItem: View {
     @State private var isShowingClipboardMessage = false
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("🏷️ Alias: \(node.alias)")
-                .font(.subheadline)
-            ZStack {
-                Text("🔑 PublicKey: \(node.truncatedPublicKey)")
-                    .onTapGesture {
-                        UIPasteboard.general.string = node.publicKey
-                        withAnimation {
-                            isShowingClipboardMessage = true
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            withAnimation {
-                                isShowingClipboardMessage = false
+        ZStack {
+            VStack(spacing: 20) {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("\(node.alias)")
+                            .font(.title2)
+                            .truncationMode(.tail)
+                            .lineLimit(1)
+                            .foregroundStyle(Color("BipaLightBlue"))
+                        Text("\(node.truncatedPublicKey)")
+                            .onTapGesture {
+                                UIPasteboard.general.string = node.publicKey
+                                withAnimation {
+                                    isShowingClipboardMessage = true
+                                }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                    withAnimation {
+                                        isShowingClipboardMessage = false
+                                    }
+                                }
                             }
+                            .font(.footnote)
+                            .foregroundStyle(.gray)
+                    }
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text("\(node.channelCountDescription) channels")
+                            .font(.headline)
+                            .bold()
+                        Text("\(node.capacityInBTCDescription) BTC")
+                            .font(.subheadline)
+                            .foregroundColor(.green)
+                    }
+                }
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("First Seen: \(node.firstSeenDateTimeDescription)")
+                            .font(.subheadline)
+                            .foregroundStyle(.gray)
+                        Text("Updated: \(node.updatedAtDateTimeDescription)")
+                            .font(.subheadline)
+                            .foregroundStyle(.gray)
+                    }
+
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        if let city = node.city,
+                           let country = node.country {
+                            Text("\(city)")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
+                            Text("\(country)")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
+                        } else if let city = node.city {
+                            Text("\(city)")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
+                        } else if let country = node.country {
+                            Text("\(country)")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
                         }
                     }
-                    .font(.subheadline)
-                if isShowingClipboardMessage {
-                    Text("Public key copied to the clipboard.")
-                        .font(.caption)
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .background(Color.black.opacity(0.7))
-                        .cornerRadius(5)
                 }
             }
-            Text("🔀 Channels: \(node.channelCountDescription)")
-                .font(.subheadline)
-            Text("⚡️ Capacity: \(node.capacityInBTCDescription) BTC")
-                .font(.subheadline)
-            Text("🧐 First Seen: \(node.firstSeenDateTimeDescription)")
-                .font(.subheadline)
-            Text("🔄 Updated At: \(node.updatedAtDateTimeDescription)")
-                .font(.subheadline)
-            if let location = node.locationDescription,
-               !location.isEmpty {
-                Text("📍 Location: \(location)")
-                    .font(.subheadline)
+            .padding(5)
+            .background(Color("BipaBackground"))
+
+            if isShowingClipboardMessage {
+                Text("Public key copied to the clipboard.")
+                    .font(.caption)
+                    .foregroundColor(.white)
+                    .padding(10)
+                    .background(Color.black.opacity(0.7))
+                    .cornerRadius(5)
             }
         }
     }

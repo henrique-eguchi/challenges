@@ -18,19 +18,6 @@ struct TopNode: Identifiable {
     let country: String?
     var id: String { publicKey }
 
-    var locationDescription: String? {
-        if let city = city,
-           let country = country {
-            return "\(city), \(country)"
-        } else if let city = city {
-            return city
-        } else if let country = country {
-            return country
-        } else {
-            return nil
-        }
-    }
-
     var firstSeenDateTimeDescription: String {
         toDateString(from: firstSeen)
     }
