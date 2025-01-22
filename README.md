@@ -1,5 +1,10 @@
 # bipa-ios-test
 
+| Light | Dark |
+| --- | --- |
+| ![Simulator Screenshot - iPhone 16 - 2025-01-21 at 23 35 21](https://github.com/user-attachments/assets/e1f881dd-8d15-40ab-94f8-231473d62311) | ![Simulator Screenshot - iPhone 16 - 2025-01-21 at 23 35 07](https://github.com/user-attachments/assets/407e39aa-249e-436c-8ee4-80c4e0fc5e91) |
+
+
 ### Build tools & versions used
 
 - Xcode 16.2 / iOS 18.2
