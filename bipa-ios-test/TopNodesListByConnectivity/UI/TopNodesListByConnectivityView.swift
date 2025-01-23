@@ -19,15 +19,18 @@ struct TopNodesListByConnectivityView: View {
                 case .loading:
                     ProgressView()
                 case .success(let nodes):
-                    List(nodes) { node in
-                        TopNodeItem(node: node)
-                            .listRowBackground(
-                                Color("BipaBackground")
-                                    .cornerRadius(5)
-                            )
+                    VStack {
+                        Toggle("", isOn: $viewModel.isFiltering)
+                        List(nodes) { node in
+                            TopNodeItem(node: node)
+                                .listRowBackground(
+                                    Color("BipaBackground")
+                                        .cornerRadius(5)
+                                )
+                        }
+                        .listRowSeparator(.hidden)
+                        .listRowSpacing(10)
                     }
-                    .listRowSeparator(.hidden)
-                    .listRowSpacing(10)
                 case .failure(let error):
                     Text("Error fetching nodes: \(error.localizedDescription)")
                 }
