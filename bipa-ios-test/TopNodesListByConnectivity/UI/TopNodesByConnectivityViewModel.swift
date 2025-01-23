@@ -9,14 +9,18 @@ import Foundation
 
 final class TopNodesByConnectivityViewModel: ObservableObject {
     @Published var state: ViewState<[TopNode]> = .initial
-    @Published var isFiltering: Bool = false {
-        didSet {
-            toggleOrderByCapacity()
-        }
-    }
+    @Published var isFilteringByCapacity: Bool = false
 
     private let topNodesService: TopNodesByConnectivityServiceProtocol
     private var nodes: [TopNode] = []
+
+    var sortedNodes: [TopNode] {
+        if isFilteringByCapacity {
+            return nodes.sorted { $0.capacity > $1.capacity }
+        } else {
+            return nodes.sorted { $0.channels > $1.channels }
+        }
+    }
 
     init(topNodesService: TopNodesByConnectivityServiceProtocol) {
         self.topNodesService = topNodesService
@@ -38,18 +42,5 @@ final class TopNodesByConnectivityViewModel: ObservableObject {
                 }
             }
         }
-    }
-
-    private func setNodesOrdering() {
-        if isFiltering {
-            nodes = nodes.sorted { $0.capacity > $1.capacity }
-        } else {
-            nodes = nodes.sorted { $0.channels > $1.channels }
-        }
-    }
-
-    func toggleOrderByCapacity() {
-        setNodesOrdering()
-        state = .success(nodes)
     }
 }

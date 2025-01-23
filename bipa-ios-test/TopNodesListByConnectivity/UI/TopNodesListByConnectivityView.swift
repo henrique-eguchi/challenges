@@ -18,10 +18,11 @@ struct TopNodesListByConnectivityView: View {
                     Text("Initial")
                 case .loading:
                     ProgressView()
-                case .success(let nodes):
+                case .success:
                     VStack {
-                        Toggle("", isOn: $viewModel.isFiltering)
-                        List(nodes) { node in
+                        Toggle("Sort by capacity:", isOn: $viewModel.isFilteringByCapacity)
+                            .padding(20)
+                        List(viewModel.sortedNodes) { node in
                             TopNodeItem(node: node)
                                 .listRowBackground(
                                     Color("BipaBackground")
