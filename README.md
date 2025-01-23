@@ -152,3 +152,7 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 
 - Started tweaks on UI at 10:30PM
 - Finished tweaks on UI at 11:30PM
+
+### Jan 23
+
+- Added sort by capacity implementation
