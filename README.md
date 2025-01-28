@@ -31,7 +31,7 @@
 
 ### What do you think is the weakest part of your project?
 
-- UI is not that good, it's readable though haha. For instance, here's a swiftui challenge I did in the past that show up my SwiftUI skills based on a prototype https://github.com/henrique-eguchi/challenges/tree/main/SwiftUI/dvorak-challenge
+- UI is not that good, since there's no provided prototypes
 
 ### Is there any other information you’d like us to know?
 
@@ -146,8 +146,6 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 - Stopped at 12AM
 
 
-## [Extra] Please don't take this into account
-
 ### Jan 21
 
 - Started tweaks on UI at 10:30PM
@@ -155,4 +153,4 @@ GET /api/v1/lightning/nodes/rankings/connectivity
 
 ### Jan 23
 
-- Added sort by capacity implementation
+- Added sort by capacity implementation (as asked on pair programming)
