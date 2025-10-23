@@ -297,3 +297,20 @@ func binarySearch(_ array: [Int], target: Int) -> Bool {
 
     return false
 }
+
+
+// MARK: - Zeroes at the end - without extra space - O(n)
+
+func placeZeroesAtTheEnd(_ array: inout [Int]) {
+    var swapPointer = 0
+
+    for i in 0..<array.count {
+        if array[i] != 0 {
+            array.swapAt(swapPointer, i)
+            swapPointer += 1
+        }
+    }
+}
+var array = [1,2,3,4,0,0,5]
+placeZeroesAtTheEnd(&array)
+print(array)
