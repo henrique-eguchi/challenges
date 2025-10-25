@@ -314,3 +314,18 @@ func placeZeroesAtTheEnd(_ array: inout [Int]) {
 var array = [1,2,3,4,0,0,5]
 placeZeroesAtTheEnd(&array)
 print(array)
+
+// MARK: - Two sum (naive) | time O(n2) space O(1)
+
+func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    for i in 0..<nums.count {
+        for j in (i+1)..<nums.count {
+            if nums[j] == target - nums[i] {
+                return [i, j]
+            }
+        }
+    }
+    return []
+}
+
+print(twoSum([2,7,11,15], 9))
