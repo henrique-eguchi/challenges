@@ -1,0 +1,26 @@
+meta {
+  name: Shorten URL
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://url-shortener-server.onrender.com/api/alias
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "url": "https://nubank.com.br"
+  }
+}
+
+script:post-response {
+  bru.setVar("lastShortenedURLAlias", res.body.alias);
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

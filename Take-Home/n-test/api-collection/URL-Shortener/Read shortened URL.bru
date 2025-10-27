@@ -1,0 +1,20 @@
+meta {
+  name: Read shortened URL
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://url-shortener-server.onrender.com/api/alias/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: {{lastShortenedURLAlias}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
